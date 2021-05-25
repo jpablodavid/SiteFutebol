@@ -1,12 +1,398 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<title>Os40DaAmendoeira</title>
+	</head>
+	<body>
+		<header class="container header">
+			<div class="logo">
+				<img src="./assets/Amendoeira.png" alt="logo do site" />
+			</div>
+
+			<div class="navBar">
+				<nav>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">News</a></li>
+						<li><a href="">Team</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="header__login">
+				<ul class="header__login-ul">
+					<li><a href="">Login</a></li>
+					<li><a href="">Sing Up</a></li>
+				</ul>
+
+				<ul class="header__social">
+					<li>
+						<a href="http://facebook.com.br" target="_blank"
+							><i class="fab fa-facebook fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://instagram.com.br" target="_blank"
+							><i class="fab fa-instagram fa-2x"></i
+						></a>
+					</li>
+					<li>
+						<a href="http://twitter.com.br" target="_blank"
+							><i class="fab fa-twitter fa-2x"></i
+						></a>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero container">
+				<div
+					id="carouselExampleFade"
+					class="carousel slide carousel-fade"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-interval="5000">
+							<div class="slide">
+								<img src="./assets/hero1.jpg" alt="" />
+
+								<div class="slide__copy">
+									<h1>Welcome</h1>
+
+									<p>Diversão e esporte sempre juntos</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<div class="slide">
+								<img class='hero__img' src="./assets/hero2.jpg" alt="" />
+
+								<div class="slide__copy">
+									<h1>Veteranos</h1>
+
+									<p>Melhor Idade</p>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item" data-bs-interval="5000">
+							<div class="slide">
+								<img  src="./assets/hero3.jpg" alt="" />
+
+								<div class="slide__copy">
+									<h1>Bate-papo</h1>
+
+									<p>O melhor é a resenha</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<h1 class="container">News</h1>
+
+				<div class="news_itens">
+					<div class="news_video">
+						<iframe
+							src="https://www.youtube.com/embed/vCW5iairfks"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+
+					<div class="news_right">
+						<div class="news_principal">
+							<img src="./assets/newsPrincipal.jpeg" alt="" />
+
+							<div class="principal_texto">
+								<h4>Titulo da news / <span> 13.05.2021</span></h4>
+
+								<h2>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								</h2>
+							</div>
+						</div>
+
+						<div class="news_up">
+							<img src="./assets/news2.jpeg" alt="" />
+
+							<div class="texto">
+								<h4>Titulo da news /<span> 13.05.2021</span></h4>
+
+								<h2>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								</h2>
+							</div>
+						</div>
+
+						<div class="news_down">
+							<img src="./assets/news3.jpeg" alt="" />
+
+							<div class="texto">
+								<h4>Titulo da news /<span> 13.05.2021</span></h4>
+
+								<h2>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="container">
+					<h1>Team</h1>
+
+					<div
+						id="carouselExampleIndicators"
+						class="carousel carousel-dark slide"
+						data-bs-ride="carousel"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="3"
+								aria-label="Slide 4"
+							></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="d-flex justify-content-evenly mt-5 pt-5">
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-evenly mt-5 pt-5">
+									<div class="card">
+										<a class="modal_ref" href="#modal"
+											><img src="./assets/player.jpg" alt="Jogador"
+										/></a>
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 38</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-evenly mt-5 pt-5">
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="d-flex justify-content-evenly mt-5 pt-5">
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+
+									<div class="card">
+										<img src="./assets/player.jpg" alt="Jogador" />
+										<div class="descricao">
+											<p>Nome</p>
+											<p>Idade: 40</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="apoiadores">
+				<div class="logo_pb">
+					<hr />
+					<img src="./assets/AmendoeiraPB.png" alt="logo preta e branca" />
+					<hr />
+				</div>
+
+				<div class="logos_apoiadores">
+					<img src="./assets/apoio.png" alt="logo dos apoiadores" />
+				</div>
+			</section>
+
+			<section class="mapa">
+				<div class="maps">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.533213142215!2d-43.355120384867064!3d-22.856753141834286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x996317580e82ff%3A0xe38e6173352256a4!2sSap%C3%AA%20Esporte%20Clube%20Lanchonete!5e0!3m2!1spt-BR!2sbr!4v1620742634972!5m2!1spt-BR!2sbr"
+					></iframe>
+				</div>
+			</section>
+
+			<div class="modal" id="modal" tabindex="-1">
+				<a href="#" class="modal__overlay" aria-label="Fechar"></a>
+				<div class="modal__content">
+					<a href="#" class="modal__close" aria-label="Fechar">x</a>
+					<div class="showModal">
+						<img src="./assets/player.jpg" alt="Jogador" />
+						<div class="modal__descricao">
+							<div>
+								<h1>Nome</h1>
+								<h2>Posição</h2>
+								<h2>Nota</h2>
+							</div>
+							<p class="modal__p">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+								tempora reiciendis laudantium dolorum at nemo? Tempore
+								doloremque minima quam qui quod provident quidem, quae et,
+								laboriosam sit dolorem, itaque earum. Lorem ipsum dolor sit amet
+								consectetur, adipisicing elit. Voluptate officia a velit quasi
+								non inventore, sapiente excepturi odit dicta quos optio nesciunt
+								voluptatibus vel veniam libero reprehenderit, iusto blanditiis
+								quibusdam!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="container">
+			<p>© 2021 40 da Amendeira.</p>
+			<span>Orgulhosamente criado por JpDev.</span>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>

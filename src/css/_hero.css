@@ -1,0 +1,30 @@
+
+.slide {
+    position: relative;
+    height: 70vh;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy { 
+    position: absolute;
+    top: 130px;
+    padding-left: 200px;
+    color: rgba(165, 42, 42, 0.98);
+}
+
+.slide__copy h1 {
+    font-size: 6rem;
+}
+
+.slide__copy p {
+    font-size: 3rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 50px;
+}

@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color:  rgba(0, 15, 7, 0.97);
+	font-size: 1.6rem;
+	margin-top: 20px;
+}
+
+.logo {
+    max-width: 150px;
+	padding: 10px;
+}
+
+.logo > img {
+	width: 100%;
+}
+
+.navBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	justify-content: space-around;
+	padding: 0 40px;
+}
+
+.header__login-ul li + li {
+	border-left: 2px solid #ddd;
+}
+
+.header__social {
+	justify-content: flex-end;
+}
