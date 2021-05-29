@@ -13,19 +13,12 @@
 
 body {
 	height: 100%;
-    background-image: url('../assets/BG.jpg');
+    background-image: url('../assets/BG3.jpg');
 	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-}
-
-.body__sobre {
-	position: absolute;
-    background-color: rgba(0, 15, 7, 0.99);
-    width: inherit;
-    height: inherit;
 }
 
 ul {
@@ -42,13 +35,29 @@ a {
 	letter-spacing: .1rem;
 }
 
-a:hover {
-	color: rgba(165, 42, 42, 0.9);
+a:hover,
+.active {
+	color: var(--color-second);
 }
 
 .container {
 	max-width: 1280px;
 	margin: auto;
 	padding: 0;
+}
+
+.title {
+	font-size: 6rem;
+    color: black;
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
+
+button {
+	background-color: var(--color-primary);
+	color: white;
 }
 

@@ -2,13 +2,18 @@
     display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color:  rgba(0, 15, 7, 0.97);
+	background-color: var(--color-primary);
 	font-size: 1.6rem;
-	margin-top: 20px;
+	margin-top: 40px;
+	padding: 0 20px;
+	border-bottom: 2px solid var(--color-second);
 }
 
 .logo {
-    max-width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    max-width: 120px;
 	padding: 10px;
 }
 
@@ -31,10 +36,14 @@ nav ul {
 	padding: 0 40px;
 }
 
+.header__login-ul {
+	padding: 10px 0;
+}
+
 .header__login-ul li + li {
 	border-left: 2px solid #ddd;
 }
 
 .header__social {
-	justify-content: flex-end;
+	padding-left: 0;
 }

@@ -15,16 +15,21 @@
     position: absolute;
     top: 130px;
     padding-left: 200px;
-    color: rgba(165, 42, 42, 0.98);
+    color: var(--color-second);
 }
 
 .slide__copy h1 {
-    font-size: 6rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }
 
 .slide__copy p {
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 5rem;
+    font-weight: 700;
     font-style: italic;
     margin-top: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
 }

@@ -1,37 +1,148 @@
 .team {
     width: 1280px;
     background-color: rgba(255, 255, 255, 0.876);
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding-bottom: 20px;    
 }
 
-.team h1 {
-    font-size: 6rem;
-    color: black;
-    padding-top: 30px;
-    text-align: center;
+.team__card_area {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  transition: .5s;
 }
 
-.card {
-    width: 200px;
-    position: relative;
-    margin-top: 30px;
-    cursor: pointer;
+.card,
+.card2,
+.card3 {
+  position: relative;
+  text-align: center;
+  max-width:250px;
+  margin:0 auto 0 auto;
 }
 
-.card:hover {
-    box-shadow: 5px 5px 15px gray;   
+.card img:hover{
+  box-shadow: 8px 8px 10px gray;
 }
 
-.card img {
-    width: 100%;
+.card_img:hover {
+  box-shadow: unset !important;
+}
+
+.card img,
+.card_img {
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  transition: .5s;
 }
 
 .descricao {
-    position: absolute;
-    top: 250px;
-    left: 20px;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 600;
-    color:white;
+  position: absolute;
+  text-align: left;
+  top: 80%;
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 10px;
 }
+
+.name,
+.age {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-second);
+  margin-bottom: 0;
+}
+
+
+/* Pagina html Team */
+
+.models {
+    display:none;
+}
+
+.team__area {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*modal*/
+
+.modal {
+    position:fixed;
+    /*left:0;
+    top:0;
+    bottom:0;
+    right:0;*/
+    background-color:rgba(255, 255, 255, 0.5);
+    display:none;
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y:auto;
+}
+
+.modal__body{
+  display: flex;
+}
+
+.modal__img {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.876);;
+}
+
+.info__name {
+  flex: 1;
+  align-self: center;
+  font-size: 3rem;
+  color: var(--color-second);
+  margin-top: 10px;
+}
+
+.info__player {
+  flex:4;
+}
+
+.modal h2 {
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.modal h3 {
+  color: var(--color-second);
+  margin-top: 100px;
+}
+
+.info__desc {
+  flex: 3;
+  font-size:15px;
+  color:black;
+  margin-bottom:  100px;
+  font-family:'Lato',Helvetica,Arial;
+  align-self: center;
+}
+
+.pizzaInfo--addButton:hover {
+    background-color:#32a345;
+}
+
+.modal Button {
+   width: 100px;
+   height: 30px;
+   align-self: flex-end;
+    
+}
+
