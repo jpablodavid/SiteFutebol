@@ -1,0 +1,16 @@
+footer {
+    background-color: var(--color-second);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p,
+footer span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    color: var(--color-primary);
+}

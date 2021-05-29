@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-primary);
+	font-size: 1.6rem;
+	margin-top: 40px;
+	padding: 0 20px;
+	border-bottom: 2px solid var(--color-second);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    max-width: 120px;
+	padding: 10px;
+}
+
+.logo > img {
+	width: 100%;
+}
+
+.navBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul {
+	justify-content: space-around;
+	padding: 0 40px;
+}
+
+.header__login-ul {
+	padding: 10px 0;
+}
+
+.header__login-ul li + li {
+	border-left: 2px solid #ddd;
+}
+
+.header__social {
+	padding-left: 0;
+}

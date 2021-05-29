@@ -1,0 +1,28 @@
+.apoiadores {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 1280px;
+    background-color: var(--color-bg-team);
+    text-align: center;
+    margin: 0 auto;    
+}
+
+.logo_pb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_pb img {
+    width:150px;
+    margin: 0 20px;
+}
+
+.logo_pb hr {
+    width: 360px;
+}
+
+.logos_apoiadores {
+    margin-top: 40px;
+    text-align: center;
+}
